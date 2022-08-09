@@ -26,6 +26,8 @@ website_label.grid(row=1, column=0, pady=4)
 # Website entry
 website_entry = Entry(width=45)
 website_entry.grid(row=1, column=1, columnspan=2, pady=4)
+# To autofocus it as soon as the app is launched.
+website_entry.focus()
 
 # user_name label
 user_name_label = Label(text="Email/Username:", width=16)
@@ -34,6 +36,8 @@ user_name_label.grid(row=2, column=0, pady=4)
 # user_name entry
 user_name_entry = Entry(width=45)
 user_name_entry.grid(row=2, column=1, columnspan=2, pady=4)
+# Adding predefined email id so that entry is already filled with our primary email id when program starts.
+user_name_entry.insert(0, "dummy@gmail.com")
 
 # pwd label
 pwd_label = Label(text="Password:", width=16)
