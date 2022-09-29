@@ -3,6 +3,22 @@ from tkinter import *
 
 # ----------------- SAVE PASSWORD --------------------- #
 
+
+def save():
+    # Getting the entries
+    website = website_entry.get()
+    email = user_name_entry.get()
+    pwd = pwd_entry.get()
+    # Writing the entries in the txt file
+    with open("data.txt", mode='a') as file:
+        file.write(f"{website}  |  {email}  |  {pwd}\n")
+    # Deleting the entries for a fresh entry
+    website_entry.delete(0, 'end')
+    pwd_entry.delete(0, 'end')
+    # Bring the focus back to website entry for smooth user experience
+    website_entry.focus()
+
+
 # --------------------- UI SETUP ------------------------ #
 # Creating a window
 window = Tk()
@@ -48,12 +64,14 @@ pwd_entry = Entry(width=45)
 pwd_entry.grid(row=3, column=1, columnspan=2, pady=4)
 
 # generate password button
-gen_pwd = Button(text="Generate Password", relief="raised", width=17)
+gen_pwd = Button(text="Generate Password",
+                 relief="raised", width=17)
 gen_pwd.grid(row=4, column=1, pady=4, sticky="w")
 
 
 # Add button
-add_pwd = Button(text="Add", relief="raised", highlightthickness=0, width=17)
+add_pwd = Button(text="Add", relief="raised",
+                 highlightthickness=0, width=17, command=save)
 add_pwd.grid(row=4, column=2, pady=4, sticky="e")
 
 
