@@ -1,6 +1,28 @@
 from tkinter import *
 from tkinter import messagebox
-# --------------------PASSWORD GENERATOR -------------------- #
+from random import randint, choice, shuffle
+# --------------------PASSWORD GENERATOR --------------------#
+
+
+def generate_pwd():
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+               'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+    # Getting a random required length for numbers,symbols and letters and using list comprehension to generate list of random letters, numbers and symbols
+    password_letters = [choice(letters) for _ in range(randint(8, 10))]
+    password_symbols = [choice(symbols) for _ in range(randint(2, 4))]
+    password_numbers = [choice(numbers) for _ in range(randint(2, 4))]
+
+    # Merging all into one list and shuffling them
+    password_list = password_letters + password_symbols + password_numbers
+    shuffle(password_list)
+
+    # Converting the list into a string
+    password = "".join(password_list)
+
+    pwd_entry.insert(0, password)
 
 # ----------------- SAVE PASSWORD --------------------- #
 
@@ -78,7 +100,7 @@ pwd_entry.grid(row=3, column=1, columnspan=2, pady=4)
 
 # generate password button
 gen_pwd = Button(text="Generate Password",
-                 relief="raised", width=17)
+                 relief="raised", width=17, command=generate_pwd)
 gen_pwd.grid(row=4, column=1, pady=4, sticky="w")
 
 
