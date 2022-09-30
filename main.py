@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import messagebox
 from random import randint, choice, shuffle
+import pyperclip
+EMAIL_ID = "dummy@gmail.com"
 # --------------------PASSWORD GENERATOR --------------------#
 
 
@@ -23,6 +25,7 @@ def generate_pwd():
     password = "".join(password_list)
 
     pwd_entry.insert(0, password)
+    pyperclip.copy(password)
 
 # ----------------- SAVE PASSWORD --------------------- #
 
@@ -88,7 +91,7 @@ user_name_label.grid(row=2, column=0, pady=4)
 user_name_entry = Entry(width=45)
 user_name_entry.grid(row=2, column=1, columnspan=2, pady=4)
 # Adding predefined email id so that entry is already filled with our primary email id when program starts.
-user_name_entry.insert(0, "dummy@gmail.com")
+user_name_entry.insert(0, EMAIL_ID)
 
 # pwd label
 pwd_label = Label(text="Password:", width=16)
