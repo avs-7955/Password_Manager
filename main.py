@@ -3,6 +3,8 @@ from tkinter import messagebox
 from random import randint, choice, shuffle
 import pyperclip
 EMAIL_ID = "dummy@gmail.com"
+
+
 # --------------------PASSWORD GENERATOR --------------------#
 
 
@@ -26,6 +28,7 @@ def generate_pwd():
 
     pwd_entry.insert(0, password)
     pyperclip.copy(password)
+
 
 # ----------------- SAVE PASSWORD --------------------- #
 
