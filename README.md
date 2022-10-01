@@ -30,11 +30,15 @@ A pop-up confirmation is enabled each time the user tries to store the password.
 <br>
 In case of empty fields, a warning is raised.
 <br>
-<img align="center" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/field_empty_ZvjiUpk9DW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664598954049" alt="My Pass Interface with pop-up warning alerting the user about the empty fields"/>
+<div align="center">
+  <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/field_empty_ZvjiUpk9DW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664598954049" alt="My Pass Interface with pop-up warning alerting the user about the empty fields"/>
+</div>
 <br>
 When the Generate Password button is clicked, it generates a random strong password, which is automatically copied to the clipboard for ease of the user.
 <br>
-<img align="center" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/generation_pwd_gyxHJ_d-e.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664599061506" alt="My Pass Interface with a password inserted in the Password entry textbox"/>
+<div align="center">
+  <img align="center" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/generation_pwd_gyxHJ_d-e.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664599061506" alt="My Pass Interface with a password inserted in the Password entry textbox"/>
+</div>
 <br>
 
 ## Run Locally
