@@ -30,9 +30,11 @@ A pop-up confirmation is enabled each time the user tries to store the password.
 <br>
 In case of empty fields, a warning is raised.
 <br>
+<br>
 <div align="center">
   <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/field_empty_ZvjiUpk9DW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664598954049" alt="My Pass Interface with pop-up warning alerting the user about the empty fields"/>
 </div>
+<br>
 <br>
 When the Generate Password button is clicked, it generates a random strong password, which is automatically copied to the clipboard for ease of the user.
 <br>
