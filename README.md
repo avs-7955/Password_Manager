@@ -29,28 +29,30 @@ A pop-up confirmation is enabled each time the user tries to store the password.
         </div>
 <br>
 In case of empty fields, a warning is raised.
-<img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/field_empty_ZvjiUpk9DW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664598954049" alt="My Pass Interface with pop-up warning alerting the user about the empty fields"/>
+<br>
+<img align="center" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/field_empty_ZvjiUpk9DW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664598954049" alt="My Pass Interface with pop-up warning alerting the user about the empty fields"/>
 <br>
 When the Generate Password button is clicked, it generates a random strong password, which is automatically copied to the clipboard for ease of the user.
-<img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/generation_pwd_gyxHJ_d-e.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664599061506" alt="My Pass Interface with a password inserted in the Password entry textbox"/>
+<br>
+<img align="center" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/generation_pwd_gyxHJ_d-e.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664599061506" alt="My Pass Interface with a password inserted in the Password entry textbox"/>
 <br>
 
 ## Run Locally
 
-Clone the project
+1. Clone the project
 
 ```bash
   git clone https://github.com/avs-7955/Password_Manager.git
 ```
 
-Go to the project directory
+2. Go to the project directory
 
 ```bash
   cd Password_Manager
 ```
-Change the email-id to your most frequently used email id in the 1st line of the script.
+3. Change the email-id to your most frequently used email id in the 1st line of the script.
 
-Start the application
+4. Start the application
 
 ```bash
   python main.py
