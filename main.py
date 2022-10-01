@@ -1,9 +1,10 @@
+#Change this to your most frequently used email id.
+EMAIL_ID = "dummy@gmail.com"
+
 from tkinter import *
 from tkinter import messagebox
 from random import randint, choice, shuffle
 import pyperclip
-EMAIL_ID = "dummy@gmail.com"
-
 
 # --------------------PASSWORD GENERATOR --------------------#
 
