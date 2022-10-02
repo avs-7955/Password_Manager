@@ -1,10 +1,11 @@
-#Change this to your most frequently used email id.
+import json
+import pyperclip
+from random import randint, choice, shuffle
+from tkinter import messagebox
+from tkinter import *
+# Change this to your most frequently used email id.
 EMAIL_ID = "dummy@gmail.com"
 
-from tkinter import *
-from tkinter import messagebox
-from random import randint, choice, shuffle
-import pyperclip
 
 # --------------------PASSWORD GENERATOR --------------------#
 
@@ -39,6 +40,13 @@ def save():
     website = website_entry.get()
     email = user_name_entry.get()
     pwd = pwd_entry.get()
+    # Making a json object
+    new_data = {
+        website: {
+            "email": email,
+            "password": pwd,
+        }
+    }
 
     # If any website or password empty - show error message
     if(len(website) == 0 or len(pwd) == 0):
@@ -50,9 +58,16 @@ def save():
             title=website, message=f"These are the details entered:\nEmail:{email} \nPassword: {pwd} \nDo you want to save it?")
 
         if is_okie:
-            # Writing the entries in the txt file
-            with open("data.txt", mode='a') as file:
-                file.write(f"{website}  |  {email}  |  {pwd}\n")
+            # Writing the entries in the json file
+            with open("data.json", mode='r') as data_file:
+                # Reading the old data
+                data = json.load(data_file)
+                # Updating the old data
+                data.update(new_data)
+
+            with open("data.json", mode='w') as data_file:
+                # Saving updated data
+                json.dump(data, data_file, indent=4)
 
             # Deleting the entries for a fresh entry
             website_entry.delete(0, 'end')
