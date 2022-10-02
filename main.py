@@ -90,7 +90,7 @@ canvas = Canvas(height=200, width=200, highlightthickness=0)
 logo_img = PhotoImage(file="logo.png")
 canvas.create_image(100, 100, image=logo_img)
 
-canvas.grid(row=0, column=1, pady=10)
+canvas.grid(row=0, column=1)
 
 # Website label
 website_label = Label(text="Website:", width=16)
@@ -122,14 +122,17 @@ pwd_entry.grid(row=3, column=1, columnspan=2, pady=4)
 
 # generate password button
 gen_pwd = Button(text="Generate Password",
-                 relief="raised", width=17, command=generate_pwd)
-gen_pwd.grid(row=4, column=1, pady=4, sticky="w")
+                 relief="raised", width=18, command=generate_pwd)
+gen_pwd.grid(row=4, column=1, pady=4, sticky="w", padx=0)
 
 
 # Add button
 add_pwd = Button(text="Add", relief="raised",
-                 highlightthickness=0, width=17, command=save)
-add_pwd.grid(row=4, column=2, pady=4, sticky="e")
+                 highlightthickness=0, width=38, command=save)
+add_pwd.grid(row=5, column=1, pady=4, columnspan=2)
 
+# Search button
+search_btn = Button(text="Search", width=10)
+search_btn.grid(row=4, column=2, pady=4, columnspan=1, sticky="w")
 
 window.mainloop()
