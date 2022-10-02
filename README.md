@@ -11,7 +11,7 @@ It can generate a random strong password with letters, symbols and numbers which
 <div align="center"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/python.svg"/>
 </div>
 
-## Screenshots
+## Screenshots(Features might be different as the app is being updated)
 A pop-up confirmation is enabled each time the user tries to store the password.
 <div>
     <p align="center">
