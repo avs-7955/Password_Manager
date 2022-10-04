@@ -37,7 +37,7 @@ def generate_pwd():
 
 def save():
     # Getting the entries
-    website = website_entry.get()
+    website = website_entry.get().lower()
     email = user_name_entry.get()
     pwd = pwd_entry.get()
     # Making a json object
@@ -74,6 +74,27 @@ def save():
             pwd_entry.delete(0, 'end')
             # Bring the focus back to website entry for smooth user experience
             website_entry.focus()
+
+# --------------------- FIND PASSWORD ------------------------ #
+
+
+def find_password():
+    # Getting the website
+    website = website_entry.get().lower()
+    try:
+        with open("data.json", mode='r') as data_file:
+            # Reading the old data
+            data_loaded = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showwarning(
+            title="Error", message="No Data File Found.")
+    else:
+        if website in data_loaded:
+            messagebox.showinfo(
+                title=website.title(), message=f'Email: {data_loaded[website]["email"]}\nPassword: {data_loaded[website]["password"]}\n')
+        else:
+            messagebox.showerror(
+                title="Error", message="No details for the website found.")
 
 
 # --------------------- UI SETUP ------------------------ #
@@ -132,7 +153,7 @@ add_pwd = Button(text="Add", relief="raised",
 add_pwd.grid(row=5, column=1, pady=4, columnspan=2)
 
 # Search button
-search_btn = Button(text="Search Password", width=18)
+search_btn = Button(text="Search Password", width=18, command=find_password)
 search_btn.grid(row=4, column=2, pady=4, columnspan=1, sticky="w")
 
 window.mainloop()
