@@ -132,7 +132,7 @@ add_pwd = Button(text="Add", relief="raised",
 add_pwd.grid(row=5, column=1, pady=4, columnspan=2)
 
 # Search button
-search_btn = Button(text="Search", width=10)
+search_btn = Button(text="Search Password", width=18)
 search_btn.grid(row=4, column=2, pady=4, columnspan=1, sticky="w")
 
 window.mainloop()
