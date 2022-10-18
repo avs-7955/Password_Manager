@@ -11,7 +11,7 @@ It can generate a random strong password with letters, symbols and numbers which
 <div align="center"><img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/python.svg"/>
 </div>
 
-## Screenshots(Features might be different as the app is being updated)
+## Screenshots
 <br>
 When the Generate Password button is clicked, it generates a random strong password, which is automatically copied to the clipboard for ease of the user.
 <br>
