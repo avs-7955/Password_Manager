@@ -16,6 +16,7 @@ It can generate a random strong password with letters, symbols and numbers which
 When the Generate Password button is clicked, it generates a random strong password, which is automatically copied to the clipboard for ease of the user.
 <br>
 The user can save the password by clicking the "ADD" button.
+<br>
 <div align="center">
     <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/Password_Manager_interface_Fi9fTAqsi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666062148887" alt="My Pass interface"/>
 </div>
@@ -29,6 +30,7 @@ The user needs to type the name of the website,and upon clicking the "SEARCH" bu
 <br>
 <br>
 In case of empty fields, a warning is raised.Similar alerts arrive for FileNotFound exceptions,etc.
+<br>
 <br>
 <div align="center">
   <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/Password_Empty_Error_vC_Fb0cO_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666062148792" alt="My Pass Interface with pop-up warning alerting the user about the empty fields"/>
