@@ -1,5 +1,5 @@
 # My Pass - Password Manager
-A user-friendly password manager that stores your credentials in a locally stored text file to ensure security.
+A user-friendly password manager that stores your credentials in a locally stored json file to ensure security.
 It has basic validation that in case of empty entries, a warning is shown,etc.
 It can generate a random strong password with letters, symbols and numbers which is automatically copied to the clipboard.
 
