@@ -63,7 +63,3 @@ In case of empty fields, a warning is raised.Similar alerts arrive for FileNotFo
 
 - [Ayushi Sharan](https://github.com/avs-7955)
 
-
-## Feedback
-
-If you have any feedback, please reach out to me at ayushi.v.sharan@gmail.com.
