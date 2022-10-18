@@ -50,7 +50,7 @@ In case of empty fields, a warning is raised.Similar alerts arrive for FileNotFo
 ```bash
   cd Password_Manager
 ```
-3. Change the email-id to your most frequently used email id in the 1st line of the script.
+3. Change the email-id to your most frequently used email id at the beginning of the script.
 
 4. Start the application
 
