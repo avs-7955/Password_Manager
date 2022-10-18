@@ -1,6 +1,6 @@
 # My Pass - Password Manager
 A user-friendly password manager that stores your credentials in a locally stored text file to ensure security.
-It has basic validation that in case of empty entries, a warning is shown.
+It has basic validation that in case of empty entries, a warning is shown,etc.
 It can generate a random strong password with letters, symbols and numbers which is automatically copied to the clipboard.
 
 <h1 align="center">
@@ -16,6 +16,7 @@ It can generate a random strong password with letters, symbols and numbers which
 When the Generate Password button is clicked, it generates a random strong password, which is automatically copied to the clipboard for ease of the user.
 <br>
 The user can save the password by clicking the "ADD" button.
+<br>
 <br>
 <div align="center">
     <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/Password_Manager_interface_Fi9fTAqsi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666062148887" alt="My Pass interface"/>
