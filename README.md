@@ -12,34 +12,26 @@ It can generate a random strong password with letters, symbols and numbers which
 </div>
 
 ## Screenshots(Features might be different as the app is being updated)
-A pop-up confirmation is enabled each time the user tries to store the password.
-<div>
-    <p align="center">
-        <div align="center">
-            <table>
-                <tr>
-                    <td>
-                        <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/Basic_storage_EHoLdlcKY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664598784337" alt="My Pass interface"/>
-                    </td>
-                    <td>
-                        <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/data_txt_6pGeU4rsw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664598784328" alt="Data txt file"/>
-                    </td>
-                </tr>
-            </table>  
-        </div>
-<br>
-In case of empty fields, a warning is raised.
-<br>
-<br>
-<div align="center">
-  <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/field_empty_ZvjiUpk9DW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664598954049" alt="My Pass Interface with pop-up warning alerting the user about the empty fields"/>
-</div>
 <br>
 When the Generate Password button is clicked, it generates a random strong password, which is automatically copied to the clipboard for ease of the user.
 <br>
+The user can save the password by clicking the "ADD" button.
+<div align="center">
+    <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/Password_Manager_interface_Fi9fTAqsi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666062148887" alt="My Pass interface"/>
+</div>
+<br>
+The user needs to type the name of the website,and upon clicking the "SEARCH" button, a pop-up comes with the website's saved Username and Password.
+<br>
 <br>
 <div align="center">
-  <img align="center" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/generation_pwd_gyxHJ_d-e.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664599061506" alt="My Pass Interface with a password inserted in the Password entry textbox"/>
+  <img align="center" src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/Search_pwd_M15aIXhal.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666062149432" alt="My Pass Interface when using Search button."/>
+</div>
+<br>
+<br>
+In case of empty fields, a warning is raised.Similar alerts arrive for FileNotFound exceptions,etc.
+<br>
+<div align="center">
+  <img src="https://ik.imagekit.io/pq7opoglh/GitHub_ReadMe/PythonMiniProjects/Pwd_Manager/Password_Empty_Error_vC_Fb0cO_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666062148792" alt="My Pass Interface with pop-up warning alerting the user about the empty fields"/>
 </div>
 <br>
 
