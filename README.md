@@ -12,7 +12,6 @@ It can generate a random strong password with letters, symbols and numbers which
 </div>
 
 ## Screenshots
-<br>
 When the Generate Password button is clicked, it generates a random strong password, which is automatically copied to the clipboard for ease of the user.
 <br>
 The user can save the password by clicking the "ADD" button.
